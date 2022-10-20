@@ -1,0 +1,57 @@
+package sadasd;
+/*
+2、某银行推出了整存整取定期储蓄业务，其存期分为一年、两年、三年、五年，到期凭存单支取本息。存款年利率表如下：
+存期 年利率（%）
+一年 2.25
+两年 2.7
+三年 3.253.
+五年 3.6
+请存入一定金额（1000起存），存一定年限（四选一），计算到期后得到的本息总额。
+提示：
+存入金额和存入年限均由键盘录入
+本息计算方式：本金+本金×年利率×年限
+ */
+
+import java.util.Scanner;
+
+public class bank {
+    public static void main(String[] args) {
+//        double total;  //本息
+
+
+        while (true){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("请输入存入金额：");
+            double income = sc.nextDouble(); //存入金额
+            System.out.println("请输入存入年限：");
+            double year = sc.nextDouble();  //存入年限
+            double total = 0;  //本息
+            System.out.println("存入金额为："+income);
+            System.out.println("存入年限为："+year);
+            if (year>0&&year<2){
+                System.out.println("年利率为：2.5%");
+                total = income+income*0.025*year;
+                System.out.println("本息总和为："+total);
+                return;
+            }else if (year>=2&&year<3){
+                System.out.println("年利率为：2.7%");
+                total = income+income*0.027*year;
+                System.out.println("本息总和为："+total);
+                return;
+            }else if (year>=3&&year<5){
+                System.out.println("年利率为：3.253%");
+                total = income+income*0.03253*year;
+                System.out.println("本息总和为："+total);
+                return;
+            }else if (year>5){
+                System.out.println("年利率为：3.6%");
+                total = income+income*0.036*year;
+                System.out.println("本息总和为："+total);
+                return;
+            }else {
+                System.out.println("输入错误！请重新输入：");
+            }
+        }
+
+    }
+}
