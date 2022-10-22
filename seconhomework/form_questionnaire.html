@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--2. 使用本节课所学form表单
+（form中的属性可不写）制作一张问卷调查表单，
+其中至少包含两个填空题，一
+个单选题，两个多选题，题目内容自拟。
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>大学生生活费调查问卷</title>
+	</head>
+	<style>
+		body{
+			
+			background-color: lightblue;
+		}
+		div{
+			width: 700px;
+			height: 1200px;
+			margin: 0;
+			
+		}
+		h1{
+			text-align: center;
+		}
+		button{
+			left: 300px;
+		}
+		form{
+			text-align: left;
+		}
+	</style>
+	<body>
+		<div>
+
+				<h1>大学生生活费调查问卷</h1>
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp亲爱的同学，你好！为了调查大学生在校每月生活费使用情况，我们特开展本次问卷调查，希望能得到您的真实想法与宝贵意见。谢谢您的合作！</p>
+				<form>
+					<h3>1. 你的性别是</h3>
+					<input type="radio" name="sex" value="男"/>男<br />
+					<input type="radio" name="sex" value="女"/>女
+				</form>
+				<form>
+					<h3>2. 你所在年级是</h3>
+					<select name="grade">
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+					</select>
+				</form>
+				<form>
+					<h3>3. 你的家庭所在地是</h3>
+					<input type="radio" name="pos" value="城市"/>城市<br />
+					<input type="radio" name="pos" value="城镇"/>城镇<br />
+					<input type="radio" name="pos" value="农村"/>农村
+				</form>
+				<form>
+					<h3>4. 你的平均月消费约为</h3>
+					<input type="radio" name="money" value="500-1000"/>500-1000 <br />
+					<input type="radio" name="money" value="1000-1500"/>1000-1500 <br />
+					<input type="radio" name="money" value="1500-2000"/>1500-2000 <br />
+					<input type="radio" name="money" value="2000以上"/>2000以上 <br />
+				</form>
+				<form>
+					<h3>5. 你的生活费主要来源于</h3>
+					<input type="checkbox"/ value="父母" name="source">父母<br />
+					<input type="checkbox"/ value="奖学金" name="source">奖助学金<br />
+					<input type="checkbox" value="兼职打工" name="source"/>兼职打工<br />
+					<input type="checkbox" value="其他" name="source"/>其他
+				</form>
+				<form>
+					<h3>6. 你的生活费主要用于</h3>
+					<input type="checkbox" name="todo" value="food"/>饮食方面<br />
+					<input type="checkbox" name="todo" value="study"/>学习方面<br />
+					<input type="checkbox" name="todo" value="clothes"/>服装化妆品<br />
+					<input type="checkbox" name="todo" value="play"/>休闲娱乐<br />
+					<input type="checkbox" name="todo" value="shopping"/>网购<br />
+					<input type="checkbox" name="todo" value="other"/>其他<br />
+				</form>				
+				<form>
+					<h3>15. 你觉得大学生最理想的经济来源是什么?</h3>
+					<input type="text" name="listname"/>
+				</form>
+				<form action="action_page.php">
+					<br />
+					<button name="button" type="button" onclick="alert('提交成功，感谢您的支持！')">点击提交</button>
+				</form> 
+			
+		</div>
+		
+	</body>
+</html>
