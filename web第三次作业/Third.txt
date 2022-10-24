@@ -1,0 +1,42 @@
+一、
+1.A
+2.B
+3.D
+4.B
+5.C
+6.D
+7.B
+二、
+1.
+（1）<input type ="text/"> 单行文本输入框
+（2）<input type = "password/"> 用来输入密码，内容①圆点的形式现实
+（3）<input type ="radio/"> 单选按钮，可以设置默认选中属性：checked
+（4）<input type = "submit">  提交表单数据按钮，可以通过设置value属性改变按钮上的默认文本
+（5）<input type ="reset"/>  单机充值按钮取消已输入表单信息
+（6）<input typr = "file"/> 选择文件按钮，可以通过单机按钮后直接选择文件，将文件提交给后台服务器
+2.
+（1）作用：收集用户信息
+（2）组成：表单域、表单控件、提示信息
+（3）功能：构造注册页面、采集网页数据
+3.
+（1）<label for ="sex">男</label>
+      <input type ="text" id = sex>
+（2）<label>男<input type = "text"></label>
+4.
+      简单选择器包括：
+（1）类型选择器（Type Selectors
+（2）属性选择器（Attribute Selectors）
+（3）ID选择器（ID Selectors）
+（4）类选择器（Class Selectors）
+（5）通配选择器（Universal Selectors）
+    组合选择器包括
+（6）后代选择器（Descendant Combinators
+ （7）子选择器（Child Combinators）
+（8）兄弟选择器（Sibling Combinators）
+5.
+所谓继承性是指书写CSS样式表时，子标签会继承父标签的某些样式，如文本颜色和字号。想要设置一个可继承的属性，只需将它应用于父元素即可。
+6.
+宽度（width）、高度（height）、背景颜色（background-color）
+三、
+  通过这几次课程的学习，进一步加深了我对HTML的理解，让我在使用HTML制作静态网页时能够更加规范了，也坚定了我学习前端的决心，在书写HTML时能让我感觉到实实在在的成就感，感觉自己是能做出一些东西的，能让我更有动力去学习更深层次的知识。
+  课程方面我觉得课程安排比较合理，基本能跟得上，暂时没有遇到解决的不了的问题。
