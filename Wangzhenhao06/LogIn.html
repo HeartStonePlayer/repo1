@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/style1.css" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">LogIn</div>
+            <div class="form-wrapper">
+                <input id="demo" type="text" name="username" placeholder="Your Username" class="input-item">
+                <input id="name" type="password" name="password" placeholder="Your Password" class="input-item">
+                <div>
+					<input id="damo" type="button" class="btn" value="LogIn" onclick="myFunction()">
+					
+				</div>
+            </div>
+            <div class="msg">
+                Don't have account?
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+	 function myFunction(){
+	  var x = document.getElementById("demo").value;
+	  var z=document.getElementById("name").value;
+	  var y = document.getElementById("damo");
+	  
+	  /*console.log(z);*/
+	   /*alert('恭喜发财')*/
+	  if(x==""&&z==""){
+	    alert("表格内不能为空");
+	     }
+	  else{
+	   if(x=="123456"&&z=="654321"){
+			location.href="http://www.baidu.com/"
+	    }
+	    else if(x=="123456"&&z==""){
+	
+	     alert("您的密码不能为空");
+	    
+	    }
+	    else if(x=="123456"&&z==""){
+	
+	     alert("您的用户名不能为空");
+	    
+	    }
+	   else{
+	    alert("您填写的用户名或密码有误，请在输入一遍")
+	   }
+	  }
+	  
+	 }
+	 </script>
+</html>
