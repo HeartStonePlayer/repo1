@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+#outer{
+	width: 560px;
+	height: 965px;
+	margin: 50px auto;
+	/* 设置背景颜色 */
+	background-color: aquamarine;
+	padding: 10px 0;
+	/* 开启相对定位 */
+	position: relative;
+	/* 裁剪溢出的内容 */
+	overflow: hidden;
+}
+#imglist{
+	list-style: none;
+	/* 写死了不好，应该通过js设置自动调整 */
+	/* width: 2800px; */
+	height: 960px;
+	/* 开启绝对定位 */
+	position: absolute;
+	/* 设置偏移量 */
+	/* 
+	 * 每向左移动560px，就会显示到下一张图片
+	 */
+	/* left: -560px; */
+}
+#imglist img{
+	display: block;
+	width: 540px;
+	height: 960px;
+}
+#imglist li{
+	float: left;
+	/* 设置左右外边距 */
+	margin: 0 10px;
+}
+/* 设置导航按钮 */
+#navDiv{
+	/* 开启绝对定位 */
+	position: absolute;
+	/* 设置位置 */
+	bottom: 15px;
+	/* 设置left值
+		outer：560px
+		nacDiv宽度 = 210px
+		560-210=350
+		350/2=175
+	*/
+ /*  left: 135px; */
+}
+#navDiv a{
+	/* 设置超链接宽高 */
+	width: 30px;
+	height:30px;
+	background-color: yellow;
+	/* 设置超链接浮动 */
+	float: left;
+	/* 设置左右外边距 */
+	margin: 12px;
+	/* 设置透明 */
+	opacity: 0.5;
+	/* 兼容IE8透明 */
+	filter: alpha(opcity = 50);
+}
+#navDiv a:hover{
+	background-color: white;
+}
